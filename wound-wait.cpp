@@ -19,10 +19,6 @@ Both schemes prefer older transactions with an older timestamp.
 // if a transaction is aborted then it is not longer my responsibility to start it again
 
 
-//dont append same to the waiting list again
-//print restart statement
-//
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -195,7 +191,7 @@ int main()
           int tid = findTransactionIndex(transactionId);
           allTransactions[tid].locked_var.push_back(readVar);
           checkWaitingQueue();
-          
+
         }
       }
     }

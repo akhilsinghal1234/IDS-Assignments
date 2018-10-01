@@ -43,7 +43,7 @@ def find_version_w(vars_, ts_, var, tx_id, ts,id):					# for read-only
         print('Transaction t',id,' rolled back as timestamp ' ,ts_,' < rts ',rts,sep='')
         rolled_back.append(id)
         return
-        
+
     if ts_ == wts:
         print('Transaction t',id,'overwrites',var,version)
 
